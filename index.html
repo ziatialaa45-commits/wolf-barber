@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -28,7 +29,6 @@
             border-color: #ffffff;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
-        /* حجم متوسط ومثالي للوجو في الهيدر */
         .logo-circle {
             width: 55px;
             height: 55px;
@@ -41,25 +41,6 @@
             overflow: hidden;
             box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
         }
-        .hero-bg {
-            position: relative;
-            background-image: url('');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #050505;
-        }
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.70);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
     </style>
 </head>
 <body class="bg-black text-white">
@@ -68,12 +49,13 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/20">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
+                <!-- إرجاع اللوجو الدائري في الهيدر -->
                 <div class="logo-circle">
                     <img src="image0-5.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-contain">
                 </div>
                 <span class="wolf-font text-base md:text-xl font-black text-white">WOLF BARBER</span>
             </div>
-
+            
             <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
                 <a href="#home" class="hover:text-gray-400 transition">الرئيسية</a>
                 <a href="#shop" class="hover:text-gray-400 transition">صور المحل</a>
@@ -89,9 +71,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg pt-32 pb-20 md:pt-44 md:pb-32 px-4 text-center border-b border-white/15">
-        <div class="hero-content max-w-4xl mx-auto flex flex-col items-center">
-            <!-- لوجو بحجم متوسط ومميز في الواجهة -->
+    <section id="home" class="pt-32 pb-20 md:pt-44 md:pb-32 px-4 text-center border-b border-white/15 bg-black">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <!-- إرجاع اللوجو الدائري بحجم متوسط في الواجهة الرئيسية -->
             <div class="w-36 h-36 rounded-full border-2 border-white/70 bg-black flex items-center justify-center mb-6 shadow-[0_0_25px_rgba(255,255,255,0.4)] overflow-hidden">
                 <img src="image0-5.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-contain">
             </div>
@@ -115,19 +97,13 @@
         <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">صور المحل</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-4 rounded-xl">
-                    <i class="fa-solid fa-image text-5xl"></i>
-                </div>
+                <img src="image1-3.jpeg" alt="Shop 1" class="w-full h-full object-cover rounded-xl m-2">
             </div>
             <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-4 rounded-xl">
-                    <i class="fa-solid fa-image text-5xl"></i>
-                </div>
+                <img src="image0-7.jpeg" alt="Shop 2" class="w-full h-full object-cover rounded-xl m-2">
             </div>
             <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-4 rounded-xl">
-                    <i class="fa-solid fa-image text-5xl"></i>
-                </div>
+                <img src="image2-3.jpeg" alt="Shop 3" class="w-full h-full object-cover rounded-xl m-2">
             </div>
         </div>
     </section>
@@ -155,22 +131,17 @@
     <section id="videos" class="py-20 px-4 max-w-7xl mx-auto border-t border-white/15">
         <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">فيديوهات الحلاقة</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
-            <!-- 10 Vertical Video Frames -->
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
+            <!-- Videos 1, 2, 3 added -->
+            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
+                <video src="Vidéo_1.mov" controls class="w-full h-full object-cover rounded-xl"></video>
             </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
+            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
+                <video src="Vidéo_2.mov" controls class="w-full h-full object-cover rounded-xl"></video>
             </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
+            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
+                <video src="Vidéo.mov" controls class="w-full h-full object-cover rounded-xl"></video>
             </div>
+            <!-- Remaining video placeholders -->
             <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
                     <i class="fa-solid fa-video text-4xl"></i>
@@ -236,3 +207,6 @@
     <footer class="py-8 text-center border-t border-white/20 text-gray-500 text-sm">
         <p>&copy; 2026 WOLF BARBER. جميع الحقوق محفوظة.</p>
     </footer>
+
+</body>
+</html>

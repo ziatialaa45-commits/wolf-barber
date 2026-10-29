@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolf Barber </title>
+    <title>Wolf Barber | Salon de Coiffure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -83,26 +83,24 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/20">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
 
-            <!-- الجهة اليمنى: اللوجو واسم المحل -->
+            <!-- Logo & Title -->
             <div class="flex items-center gap-3">
                 <div class="logo-circle">
-                    <img src="image0-5.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-contain">
+                    <img src="image0-5.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-cover">
                 </div>
                 <span class="wolf-font text-base md:text-xl font-black text-white">WOLF BARBER</span>
             </div>
 
-            <!-- الروابط في الوسط -->
+            <!-- Navigation Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
-                <a href="#home" class="hover:text-gray-400 transition">الرئيسية</a>
-                <a href="#shop" class="hover:text-gray-400 transition">صور المحل</a>
-                <a href="#haircuts" class="hover:text-gray-400 transition">صور الحلاقة</a>
-                <a href="#videos" class="hover:text-gray-400 transition">فيديوهات الحلاقة</a>
-                <a href="#contact" class="hover:text-gray-400 transition">موقعنا واتصالنا</a>
+                <a href="#home" class="hover:text-gray-400 transition">Accueil</a>
+                <a href="#shop" class="hover:text-gray-400 transition">Le Salon</a>
+                <a href="#haircuts" class="hover:text-gray-400 transition">Coiffures</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Contact & Localisation</a>
             </nav>
 
-            <!-- الجهة اليسرى: علامة الحلاقين الواقعية الدوارة وزر الواتساب -->
+            <!-- Right side: Barber Pole & WhatsApp -->
             <div class="flex items-center gap-4">
-                <!-- علامة الحلاقين الواقعية -->
                 <div class="flex items-center gap-2 bg-white/5 px-2.5 py-1.5 rounded-full border border-white/10" title="Wolf Barber">
                     <div class="barber-pole-container">
                         <div class="barber-pole-stripes"></div>
@@ -111,7 +109,7 @@
 
                 <a href="https://wa.me/213549761442" target="_blank" class="bg-white text-black font-bold px-4 py-2 rounded-full hover:bg-gray-200 transition hidden sm:flex items-center gap-2 text-sm">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>احجز موعدك</span>
+                    <span>Rدserver</span>
                 </a>
             </div>
 
@@ -122,130 +120,68 @@
     <section id="home" class="pt-32 pb-20 md:pt-44 md:pb-32 px-4 text-center border-b border-white/15 bg-black">
         <div class="max-w-4xl mx-auto flex flex-col items-center">
             <div class="w-36 h-36 rounded-full border-2 border-white/70 bg-black flex items-center justify-center mb-6 shadow-[0_0_25px_rgba(255,255,255,0.4)] overflow-hidden">
-                <img src="image0-8.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-contain">
+                <img src="image0-8.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-cover">
             </div>
             <h1 class="wolf-font text-3xl md:text-6xl font-black mb-6 uppercase">WOLF BARBER</h1>
             <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-8 font-semibold">
-               
+                L'élégance et le style moderne pour hommes. Une coupe qui affirme votre prestance.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="https://wa.me/213549761442" target="_blank" class="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition shadow-[0_0_15px_rgba(255,255,255,0.4)] flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> تواصل عبر الواتساب
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Contact WhatsApp
                 </a>
                 <a href="#contact" class="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-black transition">
-                    موقعنا على الخريطة
+                    Notre Localisation
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Shop Photos Section (3 Frames) -->
-    <section id="shop" class="py-20 px-4 max-w-7xl mx-auto">
-        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">صور المحل</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image1-3.jpeg" alt="Shop 1" class="w-full h-full object-cover rounded-xl m-2">[cite: 4]
-            </div>
-            <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image0-7.jpeg" alt="Shop 2" class="w-full h-full object-cover rounded-xl m-2">[cite: 4]
-            </div>
-            <div class="glow-box h-80 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image2-3.jpeg" alt="Shop 3" class="w-full h-full object-cover rounded-xl m-2">[cite: 4]
+    <!-- Shop Photo Section (Single image: image0-7.jpeg) -->
+    <section id="shop" class="py-20 px-4 max-w-4xl mx-auto">
+        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">Le Salon</h2>
+        <div class="flex justify-center">
+            <div class="glow-box w-full max-w-2xl h-[450px] rounded-2xl overflow-hidden p-1.5 flex items-center justify-center bg-black">
+                <img src="image0-7.jpeg" alt="Salon Wolf Barber" class="w-full h-full object-cover rounded-xl">
             </div>
         </div>
     </section>
 
     <!-- Haircut Photos Section (4 Frames) -->
     <section id="haircuts" class="py-20 px-4 max-w-7xl mx-auto border-t border-white/15">
-        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">صور الحلاقة</h2>
+        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">Galerie Coiffures</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glow-box h-72 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image2.jpeg" alt="Haircut 1" class="w-full h-full object-cover rounded-xl m-2">
+            <div class="glow-box h-80 rounded-2xl overflow-hidden p-1.5 bg-black">
+                <img src="image2.jpeg" alt="Haircut 1" class="w-full h-full object-cover rounded-xl">
             </div>
-            <div class="glow-box h-72 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image1.jpeg" alt="Haircut 2" class="w-full h-full object-cover rounded-xl m-2">
+            <div class="glow-box h-80 rounded-2xl overflow-hidden p-1.5 bg-black">
+                <img src="image1.jpeg" alt="Haircut 2" class="w-full h-full object-cover rounded-xl">
             </div>
-            <div class="glow-box h-72 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image3.jpeg" alt="Haircut 3" class="w-full h-full object-cover rounded-xl m-2">
+            <div class="glow-box h-80 rounded-2xl overflow-hidden p-1.5 bg-black">
+                <img src="image3.jpeg" alt="Haircut 3" class="w-full h-full object-cover rounded-xl">
             </div>
-            <div class="glow-box h-72 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <img src="image0-2.jpeg" alt="Haircut 4" class="w-full h-full object-cover rounded-xl m-2">
-            </div>
-        </div>
-    </section>
-
-    <!-- Videos Section (10 Vertical Frames) -->
-    <section id="videos" class="py-20 px-4 max-w-7xl mx-auto border-t border-white/15">
-        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">فيديوهات الحلاقة</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
-            <!-- Video 1: Vidéo.mov -->
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
-                <video src="Vidéo.mov" controls class="w-full h-full object-cover rounded-xl" preload="metadata"></video>[cite: 7]
-            </div>
-            <!-- Video 2: Vidéo_1.mov -->
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
-                <video src="Vidéo_1.mov" controls class="w-full h-full object-cover rounded-xl" preload="metadata"></video>[cite: 7]
-            </div>
-            <!-- Video 3: Vidéo_2.mov -->
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden p-2">
-                <video src="Vidéo_2.mov" controls class="w-full h-full object-cover rounded-xl" preload="metadata"></video>[cite: 7]
-            </div>
-
-            <!-- Remaining 7 video placeholders -->
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
-            </div>
-            <div class="glow-box h-[400px] rounded-2xl flex items-center justify-center relative overflow-hidden">
-                <div class="absolute inset-0 flex items-center justify-center text-white/20 border border-dashed border-white/30 m-2 rounded-xl">
-                    <i class="fa-solid fa-video text-4xl"></i>
-                </div>
+            <div class="glow-box h-80 rounded-2xl overflow-hidden p-1.5 bg-black">
+                <img src="image0-2.jpeg" alt="Haircut 4" class="w-full h-full object-cover rounded-xl">
             </div>
         </div>
     </section>
 
     <!-- Location & Contact Section -->
     <section id="contact" class="py-20 px-4 max-w-5xl mx-auto border-t border-white/15">
-        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">موقعنا وتواصل معنا</h2>
+        <h2 class="wolf-font text-2xl md:text-4xl font-bold text-center mb-12 tracking-wider border-b border-white/20 pb-4 inline-block mx-auto block w-fit">Contact & Localisation</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="glow-box p-8 rounded-2xl flex flex-col justify-center items-center text-center">
                 <i class="fa-solid fa-location-dot text-4xl text-white mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">العنوان</h3>
-                <p class="text-gray-400 mb-4">ولاية وهران، الجزائر</p>
+                <h3 class="text-xl font-bold mb-2">Adresse</h3>
+                <p class="text-gray-400 mb-4">Oran, Algérie</p>
                 <a href="https://www.google.com/maps/place/WOLF+BARBER,+Oran+31000/@35.6755045,-0.6516917,16z/data=!4m6!3m5!1s0xd7e89fd40e0e5a9:0xa1f9f2d0e0551d13!8m2!3d35.6755045!4d-0.6516917!16s%2Fg%2F11wy4sp4_r?g_ep=Eg1tbF8yMDI2MTAyN18wIOC7DCoASAJQAg%3D%3D" target="_blank" class="bg-white/10 px-4 py-2 rounded-lg text-sm font-mono border border-white/20 hover:bg-white hover:text-black transition">
-                    M8GX+68 Oran (فتح الخريطة)
+                    M8GX+68 Oran (Ouvrir la carte)
                 </a>
             </div>
             <div class="glow-box p-8 rounded-2xl flex flex-col justify-center items-center text-center">
                 <i class="fa-brands fa-whatsapp text-4xl text-white mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">حجز موعد عبر الواتساب</h3>
-                <p class="text-gray-400 mb-4">تواصل معنا مباشرة لتأكيد موعدك</p>
+                <h3 class="text-xl font-bold mb-2">Réservation WhatsApp</h3>
+                <p class="text-gray-400 mb-4">Contactez-nous directement pour réserver</p>
                 <a href="https://wa.me/213549761442" target="_blank" class="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition">
                     +213 549 76 14 42
                 </a>
@@ -255,7 +191,7 @@
 
     <!-- Footer -->
     <footer class="py-8 text-center border-t border-white/20 text-gray-500 text-sm">
-        <p>&copy; 2026 WOLF BARBER. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2026 WOLF BARBER. Tous droits réservés.</p>
     </footer>
 
 </body>

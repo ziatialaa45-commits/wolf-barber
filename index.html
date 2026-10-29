@@ -40,6 +40,41 @@
             overflow: hidden;
             box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
         }
+
+        /* تصميم علامة الحلاقين الواقعية الدوارة (Barber Pole) */
+        .barber-pole-container {
+            width: 20px;
+            height: 44px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            background: #111;
+        }
+
+        .barber-pole-stripes {
+            width: 100%;
+            height: 200%;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: repeating-linear-gradient(
+                -45deg,
+                #ff0000,
+                #ff0000 8px,
+                #ffffff 8px,
+                #ffffff 16px,
+                #0055ff 16px,
+                #0055ff 24px
+            );
+            animation: spinPole 3s linear infinite;
+        }
+
+        @keyframes spinPole {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50%); }
+        }
     </style>
 </head>
 <body class="bg-black text-white">
@@ -47,6 +82,8 @@
     <!-- Header / Navbar -->
     <header class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/20">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+
+            <!-- الجهة اليمنى: اللوجو واسم المحل -->
             <div class="flex items-center gap-3">
                 <div class="logo-circle">
                     <img src="image0-5.jpeg" alt="Wolf Barber Logo" class="w-full h-full object-contain">
@@ -54,6 +91,7 @@
                 <span class="wolf-font text-base md:text-xl font-black text-white">WOLF BARBER</span>
             </div>
 
+            <!-- الروابط في الوسط -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
                 <a href="#home" class="hover:text-gray-400 transition">الرئيسية</a>
                 <a href="#shop" class="hover:text-gray-400 transition">صور المحل</a>
@@ -61,10 +99,22 @@
                 <a href="#videos" class="hover:text-gray-400 transition">فيديوهات الحلاقة</a>
                 <a href="#contact" class="hover:text-gray-400 transition">موقعنا واتصالنا</a>
             </nav>
-            <a href="https://wa.me/213549761442" target="_blank" class="bg-white text-black font-bold px-5 py-2 rounded-full hover:bg-gray-200 transition flex items-center gap-2 text-sm">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>احجز موعدك</span>
-            </a>
+
+            <!-- الجهة اليسرى: علامة الحلاقين الواقعية الدوارة وزر الواتساب -->
+            <div class="flex items-center gap-4">
+                <!-- علامة الحلاقين الواقعية -->
+                <div class="flex items-center gap-2 bg-white/5 px-2.5 py-1.5 rounded-full border border-white/10" title="Wolf Barber">
+                    <div class="barber-pole-container">
+                        <div class="barber-pole-stripes"></div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/213549761442" target="_blank" class="bg-white text-black font-bold px-4 py-2 rounded-full hover:bg-gray-200 transition hidden sm:flex items-center gap-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>احجز موعدك</span>
+                </a>
+            </div>
+
         </div>
     </header>
 
